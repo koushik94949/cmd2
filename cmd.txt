@@ -1,0 +1,289 @@
+    1  docker --version
+    2  docker pull nginx
+    3  docker images
+    4  docker ps
+    5  docker run -itd nginx
+    6  docker ps
+    7  docker stop af02
+    8  docker ps -a
+    9  docker start zen_knuth
+   10  docker ps -a
+   11  docker stop zen_knuth
+   12  docker rm zen_knuth
+   13  docker ps -a
+   14  docker --help
+   15  docker run -itd tomcat 
+   16  ps -a
+   17  docker ps -a
+   18  docker run -itd --name tcs_container -p 80:80 nginx
+   19  docker ps -a
+   20  docker stop tcs_container 
+   21  docker rm tcs_container 
+   22  docker ps -a
+   23  docker images
+   24  docker run -itd --name tcs_container -p 8080:80 tomcat
+   25  docker ps -a
+   26  docker stop tcs_container 
+   27  docker rm tcs_container 
+   28  docker ps -a
+   29  docker run -itd --name tcs_container -p 80:8080 tomcat
+   30  netstat -anp | grep 8080
+   31  netstat -anp | grep 80
+   32  docker ps -a
+   33  docker stop tcs_container 7ff8
+   34  docker run -itd --name tcs_container -p 80:8080 tomcat
+   35  docker run -itd --name tcs_container -p 80:8080 jenkins
+   36  ps -a
+   37  docker ps -a
+   38  docker rm tcs_container 
+   39  docker ps -a
+   40  docker run -itd --name tcs_container -p 80:8080 jenkins
+   41  docker ps -a
+   42  docker exec -it tcs_container /bin/bash
+   43  clear
+   44  docker ps -a
+   45  docker exec -it tcs_container /bin/bash
+   46  docker ps -a
+   47  docker images
+   48  docker run -itd --name ubuntu_container -p 80:9090 ubuntu
+   49  docker run -itd --name ubuntu_container -p 81:9090 ubuntu
+   50  docker ps -a
+   51  exit
+   52  docker images
+   53  docker ps -a
+   54  ocker rm 7
+   55  docker --version
+   56  mkdir Docker
+   57  ls
+   58  cd Docker/
+   59  ls
+   60  vim Dockerfile
+   61  cd
+   62  gcloud
+   63  gcloud init
+   64  gcloud compute instances list
+   65  gcloud container clusters create k8s-cluster --zone=asia.south1-c
+   66  gcloud container clusters create k8s-cluster --zone=asia-south1-c
+   67  gcloud container clusters create k8s-cluster --zone=asia-south1-b
+   68  gcloud container clusters create k8s-cluster --zone=asia-south1-c
+   69  sudo apt-get update && sudo apt-get install -y apt-transport-https
+   70  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+   71  echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+   72  sudo apt-get update
+   73  sudo apt-get install -y kubectl
+   74  kubectl
+   75  gcloud container clusters get-credentials k8s-cluster --zone asia-south1-c --project bootcamp-project-240504
+   76  kubectl get nodes
+   77  mkdir k8s
+   78  cd k8s/
+   79  ls
+   80  vim pod.yaml
+   81  cat pod.yaml 
+   82  kubectl create -f pod.yml
+   83  kubectl create -f pod.yaml
+   84  vim pod.yaml
+   85  kubectl create -f pod.yaml
+   86  vim pod.yaml
+   87  kubectl create -f pod.yaml
+   88  kubectl get pod
+   89  kubectl describe 
+   90  kubectl describe pods
+   91  kubectl describe pod sample-pod
+   92  curl 10.52.2.7
+   93  curl https://kubernetes.io/docs/tasks/tools/install-kubectl/
+   94  cd
+   95  exit
+   96  l
+   97  cd k8s/
+   98  ls
+   99  vim deployment.yaml
+  100  kubectl create -f deployment.yaml
+  101  vim deployment.yaml
+  102  kubectl create -f deployment.yaml
+  103  vim deployment.yaml
+  104  kubectl create -f deployment.yaml
+  105  vim deployment.yaml
+  106  kubectl create -f deployment.yaml
+  107  vim deployment.yaml
+  108  kubectl create -f deployment.yaml
+  109  vim deployment.yaml
+  110  kubectl create -f deployment.yaml
+  111  vim deployment.yaml
+  112  kubectl create -f deployment.yaml
+  113  vim deployment.yaml
+  114  kubectl create -f deployment.yaml
+  115  vim deployment.yaml
+  116  kubectl create -f deployment.yaml
+  117  vim deployment.yaml
+  118  kubectl create -f deployment.yaml
+  119  vim deployment.yaml
+  120  kubectl create -f deployment.yaml
+  121  vim deployment.yaml
+  122  kubectl create -f deployment.yaml
+  123  vim deployment.yaml
+  124  kubectl create -f deployment.yaml
+  125  vim deployment.yaml
+  126  kubectl create -f deployment.yaml
+  127  vim deployment.yaml
+  128  kubectl create -f deployment.yaml
+  129  vim deployment.yaml
+  130  kubectl create -f deployment.yaml
+  131  vim service.yaml
+  132  kubectl create -f service.yaml
+  133  kubectl get service
+  134  vim deployment.yaml
+  135  kubectl create -f deployment.yaml
+  136  vim deployment.yaml
+  137  kubectl create -f deployment.yaml
+  138  vim deployment.yaml
+  139  kubectl create -f deployment.yaml
+  140  vim deployment.yaml
+  141  kubectl create -f deployment.yaml
+  142  vim deployment.yaml
+  143  kubectl create -f deployment.yaml
+  144  vim deployment.yaml
+  145  kubectl create -f deployment.yaml
+  146  kubectl get pods
+  147  kubectl get deployment.yaml 
+  148  kubectl get deployment
+  149  kubectl delete service my-service
+  150  vim nodeport.yaml
+  151  kubectl create -f nodeport.yaml 
+  152  vim nodeport.yaml
+  153  kubectl create -f nodeport.yaml 
+  154  vim nodeport.yaml
+  155  kubectl create -f nodeport.yaml 
+  156  vim nodeport.yaml
+  157  kubectl create -f nodeport.yaml 
+  158  vim nodeport.yaml
+  159  kubectl create -f nodeport.yaml 
+  160  vim nodeport.yaml
+  161  kubectl create -f nodeport.yaml 
+  162  vim nodeport.yaml
+  163  kubectl create -f nodeport.yaml 
+  164  vim nodeport.yaml
+  165  kubectl create -f nodeport.yaml 
+  166  vim nodeport.yaml
+  167  kubectl describe service
+  168  kubectl get service
+  169  ls
+  170  cat service.yaml 
+  171  kubectl delete -f service.yaml 
+  172  ls
+  173  kubectl delete -f service.yaml 
+  174  rm service.yaml 
+  175  ls
+  176  vim service.yaml
+  177  ls
+  178  kubectl create -f nodeport.yaml 
+  179  vim nodeport.yaml
+  180  kubectl create -f nodeport.yaml 
+  181  cp nodeport.yaml loadbalance.yaml
+  182  ls
+  183  vim loadbalance.yaml 
+  184  kubectl create -f loadbalance.yaml 
+  185  vim loadbalance.yaml 
+  186  kubectl create -f loadbalance.yaml 
+  187  vim loadbalance.yaml 
+  188  kubectl create -f loadbalance.yaml 
+  189  vim loadbalance.yaml 
+  190  kubectl create -f loadbalance.yaml 
+  191  kubectl get service
+  192  cd k8s/
+  193  ls
+  194  vim deployment.yaml 
+  195  kubectl create -f deployment.yaml 
+  196  kubectl get deploy
+  197  mv deployment.yaml deployment2.yaml 
+  198  ls
+  199  kubectl get deploy
+  200  vim deployment2.yaml 
+  201  cd
+  202  cd k8s/
+  203  docker pull npsoni/maytcs:latest
+  204  docker run -itd  --name temp -p 9090:8080 npsoni/maytcs:latest
+  205  docker run -itd  --name temp1 -p 8082:8080 npsoni/tcsapp:8
+  206  kubectl get deploy
+  207  kubectl delete deploy addressbookdeployment 
+  208  vim deployment2.yaml 
+  209  kubectl create -f deployment2.yaml 
+  210  kubectl get deploy
+  211  vim deployment2.yaml 
+  212  kubectl get deploy
+  213  ls
+  214  cp loadbalance.yaml ldbalance.yaml
+  215  ls
+  216  vim ldbalance.yaml 
+  217  kubectl create -f ldbalance.yaml 
+  218  kubectl get deploy
+  219  kubectl get service
+  220  vim ldbalance.yaml 
+  221  kubectl get deploy
+  222  kubectl get service
+  223  kubectl get pods
+  224  curl 35.200.147.138
+  225  vim ldbalance.yaml 
+  226  kubectl apply -f ldbalance.yaml 
+  227  vim ldbalance.yaml 
+  228  ls
+  229  cat deployment2.yaml 
+  230  vim ldbalance.yaml 
+  231  kubectl get pods
+  232  kubectl get service
+  233  kubectl get deploy
+  234  kubectl apply -f ldbalance.yaml 
+  235  kubectl get service
+  236  ls
+  237  vim deployment2.yaml 
+  238  kubectl apply -f deployment2.yaml --record
+  239  vim deployment2.yaml 
+  240  kubectl apply -f deployment2.yaml --record
+  241  kubectl rollout status deployment2.yaml addressbookdeployment
+  242  kubectl rollout status deployment addressbookdeployment
+  243  kubectl get svc
+  244  kubectl get deploy
+  245  kubectl desc deploy addressbookdeployment
+  246  kubectl desc deployment addressbookdeployment
+  247  kubectl describe deployment addressbookdeployment
+  248  kubectl rollout status
+  249  kubectl rollout history deployment addressbookdeployment
+  250  kubectl rollout undo deployment addressbookdeployment --to-revi=3sion
+  251  kubectl rollout undo deployment addressbookdeployment --to-revision=2
+  252  kubectl get rs
+  253  kubectl rollout undo deployment addressbookdeployment --to-revision=3
+  254  kubectl get svc
+  255  kubectl logs
+  256  kubectl logs addressbookdeployment
+  257  kubectl logs addressbookdeployment-5fd67646c5
+  258  kubectl get pods
+  259  kubectl describe pod addressbookdeployment-5fd67646c5-wjjb4
+  260  kubectl logs addressbookdeployment-5fd67646c5-wjjb4
+  261  kubectl logs addressbookdeployment-5fd67646c5-cxn2h
+  262  exit
+  263  gcloud container delete k8s-cluster --zone asia-south1-c
+  264  gcloud delete container k8s-cluster --zone asia-south1-c
+  265  kubectl
+  266  gcloud delete container k8s-cluster --zone asia-south1-c
+  267  gcloud container clusters delete  k8s-cluster --zone asia-south1-c
+  268  exit
+  269  docker images
+  270  history
+  271  ls
+  272  cd
+  273  cd Docker/
+  274  ls
+  275  cat Dockerfile 
+  276  cd
+  277  ls
+  278  ps -a
+  279  docker ps -a
+  280  docker swarm
+  281  docker service
+  282  docker service ls
+  283  exit
+  284  history
+  285  apt-get install git
+  286  ls
+  287  mkdir mygit
+  288  cd mygit/
+  289  history > cmd.txt
